@@ -1,4 +1,4 @@
-//
+// 变量
 
 package main
 
