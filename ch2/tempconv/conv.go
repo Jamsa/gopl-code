@@ -1,3 +1,4 @@
+// 把转换函数放在此包中
 package tempconv
 
 // CtoF ...

@@ -1,4 +1,5 @@
 // 包
+// 变量声明、常量和方法放在此文件
 package tempconv
 
 import "fmt"
