@@ -3,7 +3,7 @@
 * 使用：
 * go build gopl.io/ch1/fetch
 * go build gopl.io/ch5/outline
-* ./fetch http://golang.org | ./findlinks
+* ./fetch http://golang.org | ./outline
  */
 package main
 
