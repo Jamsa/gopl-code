@@ -43,9 +43,13 @@ func main() {
 	fmt.Printf("%s\n", data)
 
 	// 只解析一部分成员
-	var titles []struct{Title string}
+	var titles []struct{
+		Title string
+		Year int
+	}
 	if err = json.Unmarshal(data, &titles); err != nil{
 		log.Fatalf("Json unmarshaling failed: %s", err)
 	}
 	fmt.Println(titles)
+	fmt.Println("test汉字")
 }
