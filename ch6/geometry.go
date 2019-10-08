@@ -3,6 +3,7 @@ package main
 
 import (
 	"fmt"
+
 	geo "gopl.io/ch6/geometry"
 )
 
@@ -22,7 +23,9 @@ func main() {
 	p := geo.Point{1, 2}
 	q := geo.Point{3, 4}
 
+	//函数调用
 	fmt.Println(geo.Distance(p, q))
+	//方法调用
 	fmt.Println(p.Distance(q))
 
 	perim := Path{
@@ -33,4 +36,10 @@ func main() {
 	}
 
 	fmt.Println(perim.Distance())
+
+	//指针类型方法调用
+	r := &geo.Point{1, 2}
+	r.ScaleBy(2)
+	fmt.Println(*r)
+
 }
